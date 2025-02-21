@@ -1,79 +1,174 @@
-# 🌕 MOONPUP $MPUP
+# 🌕 MOONPUP \$PUP
 
 <div align="center">
 
 ![MoonPup Logo](https://moonpup.lol/assets/images/image01.png?v=799071c8)
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/MoonPupSol?style=social)](https://x.com/ogmpupsol?s=21)
-[![Telegram](https://img.shields.io/badge/Join-Telegram-blue)](https://t.me/s/ogmpupsol)
-[![Website](https://img.shields.io/badge/Website-moonpup.lol-blue)](https://moonpup.lol)
+[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/s/ogmpupsol)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Discord](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/moonpup)
 
-*"Before humans reached for the stars, dogs showed us the way."*
+**The First Four-Legged Pioneers of Space, Now on Solana**
+
+[Website](https://moonpup.lol/) • [Telegram](https://t.me/s/ogmpupsol) • [Twitter](https://x.com/ogmpupsol?s=21) • [Linktree](https://linktr.ee/moonpupsol)
 
 </div>
 
-## 🚀 The First Four-Legged Pioneers
+## 🚀 Our Story
 
-MOONPUP celebrates the incredible legacy of the first space pioneers - the brave canine cosmonauts who ventured beyond Earth's atmosphere. These courageous pups paved the way for human space exploration, proving that dreams of reaching the stars know no species bounds.
+Before humans took their giant leap, brave pups blazed the trail to the stars. MOONPUP celebrates these pioneering pooches who strapped on their tiny helmets and ventured into the cosmos, all wagging tails and wide eyes. It's not just a coin; it's a tribute to the first four-legged moonwalkers who proved that even the sky isn't the limit when you've got enough fur and courage.
 
-### 🐾 A Tribute to Space History
+As the first DeepSeek AI meme token on-chain, we're carrying forward that legacy of canine courage into the crypto space, creating a community as boundless as space itself.
 
-Before the first human footprint on the moon, there were pawprints in the cosmos. MOONPUP isn't just another meme coin - it's a tribute to these pioneering pooches who:
-- Boldly went where no dog had gone before
-- Proved space travel was possible
-- Became the first living beings to orbit Earth
-- Laid the foundation for all space exploration
+## 💫 Vision
+- 🐕 Honoring the original space explorers
+- 🚀 Pioneering AI-powered meme culture
+- 🌌 Building an interstellar community
+- 🛸 Creating utility that's out of this world
 
-## 💫 Project Fundamentals
+## 💎 Tokenomics
 
-### 📊 Tokenomics
-- **Total Supply:** 1,000,000,000 MPUP
-- **Liquidity:** 100% LP BURNT
-- **Contract Status:** Revoked
-- **Tax:** 0%
-- **Platform:** Launching on PUMP.FUN
+| Detail | Information |
+|--------|-------------|
+| Token Name | MOONPUP \$PUP |
+| Blockchain | Solana |
+| Total Supply | 1,000,000,000 tokens |
+| Liquidity | 100% LP BURNT |
+| Contract Status | REVOKED |
+| Tax | 0% |
+| Contract | Deploying shortly on PUMP.FUN |
 
-### 🛡️ Security Features
-- Fully revoked contract
-- Burnt liquidity
-- Zero transaction tax
-- Transparent operations
+## 📊 Market Data
 
-## 🌟 Why MOONPUP?
+> *As of February 21, 2025*
 
-1. **Historical Significance**
-   - Honors the real canine space pioneers
-   - Connects crypto culture with space exploration history
+- **Price:** \$0.0003006 USD
+- **Liquidity:** ~\$89,000 USD
+- **FDV:** ~\$300,000 USD
 
-2. **Community First**
-   - Zero tax structure for optimal trading
-   - Community-driven development and governance
+### 📈 Track Our Journey
+- [CoinMarketCap](https://coinmarketcap.com/dexscan/solana/9rsoGDwPb3xnddsu1ernhmix4xsua3sngs4hm4gw7oyv/)
+- [CoinGecko](https://www.coingecko.com/en/coins/moonpup)
+- [DEX Screener](https://dexscreener.com/solana/9rsogdwpb3xnddsu1ernhmix4xsua3sngs4hm4gw7oyv)
 
-3. **Strong Foundation**
-   - 100% burnt liquidity for price stability
-   - Revoked contract for maximum security
+## 🌐 Join Our Pack
 
-## 🎯 Vision & Mission
+Connect with fellow space pups across the galaxy:
 
-MOONPUP aims to:
-- Celebrate the spirit of exploration
-- Build a vibrant, engaged community
-- Create lasting value through innovation
-- Honor the legacy of space-faring dogs
+- [Official Website](https://moonpup.lol/)
+- [Telegram](https://t.me/s/ogmpupsol)
+- [Twitter/X](https://x.com/ogmpupsol?s=21)
+- [Discord](https://discord.gg/moonpup)
+- [Reddit](https://reddit.com/r/MoonPupOfficial)
+- [Instagram](https://instagram.com/moonpupsol)
+- [Linktree](https://linktr.ee/moonpupsol)
 
-## 🔗 Join the Pack
+## 🛠 Mission Control: Features & Utilities
 
-- **Website:** [moonpup.lol](https://moonpup.lol)
-- **Telegram:** [Join Our Community](https://t.me/s/ogmpupsol)
-- **Twitter:** [@MoonPupSol](https://x.com/ogmpupsol?s=21)
-- **Trading:** Coming soon on PUMP.FUN
+### Current Developments
+- AI-powered lunar navigation system (price alerts)
+- Interstellar AI communication system (Telegram & X bot)
+- Diamond Paw Mission Control Center (holder dashboard)
+- Space Station Development (community tools)
+
+### Future Missions
+- Advanced orbital tracking systems
+- Decentralized space governance
+- Cross-chain space bridges
+- Enhanced AI exploration tools
+
+## 💻 Ground Control (Development)
+
+### Launch Requirements
+```bash
+- Node.js v16+
+- Solana CLI tools
+- Yarn or npm
+```
+
+### Mission Setup
+```bash
+# Clone mission parameters
+git clone https://github.com/Shillz-Labs/MoonPup.git
+
+# Enter the command center
+cd MoonPup
+
+# Initialize systems
+yarn install
+
+# Launch development environment
+yarn dev
+```
+
+### Advanced Setup
+For more advanced users, consider setting up a Docker environment for consistent development across different systems.
+
+```bash
+# Build Docker image
+docker build -t moonpup .
+
+# Run Docker container
+docker run -it moonpup
+```
+
+## 🚀 Join the Mission
+
+1. **Enlist in the Space Program**
+   - Follow Mission Control on [Twitter](https://x.com/ogmpupsol?s=21)
+   - Join the Crew on [Telegram](https://t.me/s/ogmpupsol)
+   - Enter the Space Station on [Discord](https://discord.gg/moonpup)
+
+2. **Study the Mission**
+   - Review our [Flight Manual](https://docs.moonpup.lol)
+   - Inspect our [Mission Code](https://github.com/Shillz-Labs/MoonPup)
+   - Read our [Space Logs](https://medium.com/@moonpup)
+
+3. **Contribute to the Mission**
+   - Submit mission improvements
+   - Report anomalies
+   - Share space innovations
+   - Create cosmic content
+
+## 🤝 Mission Contributions
+
+We welcome all space cadets to contribute! Check our [Mission Guidelines](CONTRIBUTING.md) before submitting your improvements.
+
+Key Mission Areas:
+- Space-grade code development
+- Mission documentation
+- Community tools
+- Content creation
+- Bug reports
+- Feature suggestions
+
+### Contribution Workflow
+1. Fork the repository and create a new branch for your feature or fix.
+2. Make your changes and ensure they are well-documented.
+3. Submit a pull request with a clear description of your changes.
+4. Participate in the code review process and make any necessary revisions.
+
+## 📚 Learning Resources
+
+- [Solana Documentation](https://docs.solana.com/)
+- [DeepSeek AI](https://deepseek.ai/)
+- [Crypto Development Tutorials](https://www.youtube.com/playlist?list=PLjSpcl9y_dwezWGZrWYzPpZnMGQrUkTQ)
+
+## 🛡 Security
+
+We take security seriously. If you discover a vulnerability, please report it responsibly by contacting us at [security@moonpup.lol](mailto:security@moonpup.lol).
+
+## 📜 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
 <div align="center">
 
-**TO THE MOON, WITH WAGGING TAILS! 🚀🐕**
+Made with 💫 by the MOONPUP Space Program
 
-*In memory of the brave pups who first touched the stars*
+[Mission Control](https://moonpup.lol/) • [Communication Hub](https://t.me/s/ogmpupsol) • [Space Updates](https://x.com/ogmpupsol?s=21) • [Space Station](https://discord.gg/moonpup)
 
 </div>
