@@ -1,18 +1,26 @@
 import { NextResponse } from "next/server"
 import { HfInference } from "@huggingface/inference"
 
-// Use environment variable instead of hardcoded token
+export const runtime = 'edge'
+
+if (!process.env.HUGGINGFACE_API_TOKEN) {
+  throw new Error("Missing HUGGINGFACE_API_TOKEN environment variable");
+}
+
 const client = new HfInference(process.env.HUGGINGFACE_API_TOKEN)
 
 export async function POST(request: Request) {
   try {
     const { prompt } = await request.json()
+    
+    if (!prompt) {
+      return NextResponse.json({ error: "Prompt is required" }, { status: 400 })
+    }
 
     const image = await client.textToImage({
-      model: "black-forest-labs/FLUX.1-dev",
+      model: "stabilityai/stable-diffusion-2",
       inputs: prompt,
       parameters: { num_inference_steps: 50 },
-      provider: "nebius",
     })
 
     // Convert the Blob to a base64 string
