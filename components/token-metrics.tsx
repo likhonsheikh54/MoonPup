@@ -3,59 +3,66 @@
 import { useEffect, useState } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
-import { Coins } from "lucide-react"
-import { Skeleton } from "@/components/ui/skeleton"
 
-// Mock data
-const MOCK_METRICS = {
-  totalSupply: 1_000_000_000,
-  circulatingSupply: 950_000_000,
-  holders: 15000,
-  transactions24h: 2450,
-  marketCap: 12000000,
+interface TokenMetrics {
+  price: number
+  marketCap: number
+  volume24h: number
+  circulatingSupply: number
+  totalSupply: number
 }
 
 export function TokenMetrics() {
-  const [metrics, setMetrics] = useState(MOCK_METRICS)
-  const [loading, setLoading] = useState(true)
+  const [metrics, setMetrics] = useState<TokenMetrics | null>(null)
 
   useEffect(() => {
-    // Simulate API call
-    const fetchMetrics = async () => {
-      setLoading(true)
-      // In a real scenario, you'd fetch data from an API here
-      await new Promise((resolve) => setTimeout(resolve, 1000)) // Simulate network delay
-      setMetrics(MOCK_METRICS)
-      setLoading(false)
-    }
-
-    fetchMetrics()
+    fetch("https://api.coingecko.com/api/v3/coins/moonpup")
+      .then((response) => response.json())
+      .then((data) => {
+        setMetrics({
+          price: data.market_data.current_price.usd,
+          marketCap: data.market_data.market_cap.usd,
+          volume24h: data.market_data.total_volume.usd,
+          circulatingSupply: data.market_data.circulating_supply,
+          totalSupply: data.market_data.total_supply,
+        })
+      })
+      .catch((error) => console.error("Error fetching token metrics:", error))
   }, [])
 
-  return (
-    <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-      <Card>
-        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-          <CardTitle className="text-sm font-medium">Total Supply</CardTitle>
-          <Coins className="h-4 w-4 text-muted-foreground" />
-        </CardHeader>
-        <CardContent>
-          {loading ? (
-            <Skeleton className="h-8 w-[100px]" />
-          ) : (
-            <>
-              <div className="text-2xl font-bold">{metrics.totalSupply.toLocaleString()}</div>
-              <Progress value={(metrics.circulatingSupply / metrics.totalSupply) * 100} className="mt-2" />
-              <p className="text-xs text-muted-foreground mt-2">
-                {((metrics.circulatingSupply / metrics.totalSupply) * 100).toFixed(2)}% Circulating
-              </p>
-            </>
-          )}
-        </CardContent>
-      </Card>
+  if (!metrics) return <div>Loading token metrics...</div>
 
-      {/* Repeat similar structure for Holders, 24h Transactions, and Market Cap */}
-    </div>
+  return (
+    <Card className="bg-opacity-20 bg-black backdrop-blur-lg text-white">
+      <CardHeader>
+        <CardTitle className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500">
+          Token Metrics
+        </CardTitle>
+      </CardHeader>
+      <CardContent>
+        <div className="grid gap-4">
+          <div>
+            <p className="text-sm font-medium text-gray-400">Price</p>
+            <p className="text-2xl font-bold">${metrics.price.toFixed(6)}</p>
+          </div>
+          <div>
+            <p className="text-sm font-medium text-gray-400">Market Cap</p>
+            <p className="text-2xl font-bold">${metrics.marketCap.toLocaleString()}</p>
+          </div>
+          <div>
+            <p className="text-sm font-medium text-gray-400">24h Volume</p>
+            <p className="text-2xl font-bold">${metrics.volume24h.toLocaleString()}</p>
+          </div>
+          <div>
+            <p className="text-sm font-medium text-gray-400">Circulating Supply</p>
+            <Progress value={(metrics.circulatingSupply / metrics.totalSupply) * 100} className="mt-2" />
+            <p className="text-sm mt-1">
+              {metrics.circulatingSupply.toLocaleString()} / {metrics.totalSupply.toLocaleString()}
+            </p>
+          </div>
+        </div>
+      </CardContent>
+    </Card>
   )
 }
 

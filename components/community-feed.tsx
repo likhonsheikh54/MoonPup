@@ -22,46 +22,43 @@ const posts = [
     comments: 12,
     shares: 8,
   },
-  // Add more sample posts as needed
 ]
 
 export function CommunityFeed() {
   return (
-    <div className="space-y-6">
-      <Card>
-        <CardHeader>
-          <CardTitle>Community Feed</CardTitle>
-        </CardHeader>
-        <CardContent>
-          {posts.map((post) => (
-            <div key={post.id} className="mb-6 pb-6 border-b last:border-b-0">
-              <div className="flex items-center mb-2">
-                <Avatar className="h-8 w-8 mr-2">
-                  <AvatarImage src={`https://api.dicebear.com/6.x/initials/svg?seed=${post.author}`} />
-                  <AvatarFallback>{post.author[0]}</AvatarFallback>
-                </Avatar>
-                <span className="font-semibold">{post.author}</span>
-              </div>
-              <p className="mb-4">{post.content}</p>
-              <div className="flex space-x-4">
-                <Button variant="ghost" size="sm">
-                  <Heart className="h-4 w-4 mr-2" />
-                  {post.likes}
-                </Button>
-                <Button variant="ghost" size="sm">
-                  <MessageSquare className="h-4 w-4 mr-2" />
-                  {post.comments}
-                </Button>
-                <Button variant="ghost" size="sm">
-                  <Share2 className="h-4 w-4 mr-2" />
-                  {post.shares}
-                </Button>
-              </div>
+    <Card className="card">
+      <CardHeader>
+        <CardTitle className="text-3xl font-bold secondary-gradient text-gradient">Community Feed</CardTitle>
+      </CardHeader>
+      <CardContent>
+        {posts.map((post) => (
+          <div key={post.id} className="mb-6 pb-6 border-b border-white/10 last:border-b-0">
+            <div className="flex items-center mb-2">
+              <Avatar className="h-8 w-8 mr-2">
+                <AvatarImage src={`https://api.dicebear.com/6.x/initials/svg?seed=${post.author}`} />
+                <AvatarFallback>{post.author[0]}</AvatarFallback>
+              </Avatar>
+              <span className="font-semibold">{post.author}</span>
             </div>
-          ))}
-        </CardContent>
-      </Card>
-    </div>
+            <p className="mb-4">{post.content}</p>
+            <div className="flex space-x-4">
+              <Button variant="ghost" size="sm" className="hover:text-brand-pink">
+                <Heart className="h-4 w-4 mr-2" />
+                {post.likes}
+              </Button>
+              <Button variant="ghost" size="sm" className="hover:text-accent-yellow">
+                <MessageSquare className="h-4 w-4 mr-2" />
+                {post.comments}
+              </Button>
+              <Button variant="ghost" size="sm" className="hover:text-brand-pink">
+                <Share2 className="h-4 w-4 mr-2" />
+                {post.shares}
+              </Button>
+            </div>
+          </div>
+        ))}
+      </CardContent>
+    </Card>
   )
 }
 

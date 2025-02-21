@@ -1,8 +1,25 @@
 [build]
-  command = "bun install && bun run build"
-  publish = "dist" # Change this to your actual output directory
+  command = "npm run build"
+  publish = ".next"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
 
 [build.environment]
-  NODE_VERSION = "18" # Ensure compatibility with Bun
-  BUN_VERSION = "latest" # Use the latest version of Bun
+  NODE_VERSION = "16"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[dev]
+  framework = "nextjs"
+  targetPort = 3000
+
+[functions]
+  directory = "netlify/functions"
+
+[context.production.environment]
+  HUGGINGFACE_API_KEY = "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"
 

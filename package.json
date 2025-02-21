@@ -59,12 +59,19 @@
     "vaul": "^0.9.6",
     "zod": "^3.24.1",
     "ws": "latest",
+    "@emotion/is-prop-valid": "latest",
     "axios": "latest",
+    "puppeteer": "latest",
+    "random-useragent": "latest",
     "cohere-ai": "latest",
     "fs": "latest",
     "path": "latest",
     "openai": "latest",
-    "tailwindcss": "latest"
+    "tailwindcss": "latest",
+    "@huggingface/inference": "latest",
+    "framer-motion": "latest",
+    "crypto": "latest",
+    "telegraf": "latest"
   },
   "devDependencies": {
     "@types/node": "^22",

@@ -1,90 +1,66 @@
 import { NextResponse } from "next/server"
-import { CohereClient } from "cohere-ai"
-import fs from "fs"
-import path from "path"
+import puppeteer from "puppeteer"
+import axios from "axios"
+import randomUseragent from "random-useragent"
 
-function getConfig() {
-  const configPath = path.join(process.cwd(), "config.json")
-  if (fs.existsSync(configPath)) {
-    const configFile = fs.readFileSync(configPath, "utf8")
-    return JSON.parse(configFile)
-  }
-  throw new Error("config.json not found")
+const PROXY_SOURCES = [
+  "https://github.com/dpangestuw/Free-Proxy/raw/refs/heads/main/socks4_proxies.txt",
+  "https://github.com/dpangestuw/Free-Proxy/raw/refs/heads/main/http_proxies.txt",
+  "https://github.com/berkay-digital/Proxy-Scraper/raw/refs/heads/main/proxies.txt",
+]
+
+async function getProxies() {
+  const proxies = await Promise.all(
+    PROXY_SOURCES.map(async (source) => {
+      const response = await axios.get(source)
+      return response.data.split("\n").filter((line: string) => line.trim() !== "")
+    }),
+  )
+  return proxies.flat()
 }
-
-const config = getConfig()
-const cohere = new CohereClient({
-  token: config.COHERE_API_KEY,
-})
 
 export async function POST(request: Request) {
-  try {
-    const { url, engagementType } = await request.json()
+  const { url, count } = await request.json()
 
-    if (!url.includes("reddit.com")) {
-      return NextResponse.json({ error: "Invalid Reddit URL" }, { status: 400 })
+  if (!url.includes("reddit.com")) {
+    return NextResponse.json({ error: "Invalid Reddit URL." }, { status: 400 })
+  }
+
+  try {
+    const proxies = await getProxies()
+
+    if (proxies.length === 0) {
+      return NextResponse.json({ error: "No proxies available." }, { status: 500 })
     }
 
-    // Generate an ethical engagement suggestion
-    const response = await cohere.generate({
-      model: "command",
-      prompt: `Generate an ethical way to engage with the Reddit post at ${url}. The engagement type is ${engagementType}. Focus on genuine interaction and community building. Do not suggest any form of manipulation or artificial boosting.`,
-      maxTokens: 150,
-      temperature: 0.7,
+    const browser = await puppeteer.launch({
+      headless: true,
+      args: ["--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage"],
     })
 
-    const suggestion = response.generations[0].text.trim()
+    const page = await browser.newPage()
 
-    return NextResponse.json({
-      message: "Ethical engagement suggestion generated successfully",
-      suggestion,
-      success: true,
-    })
+    for (let i = 0; i < count; i++) {
+      const proxy = proxies[Math.floor(Math.random() * proxies.length)]
+      await page.setRequestInterception(true)
+      page.once("request", (request) => {
+        const overrides: any = {}
+        if (proxy) {
+          overrides.proxy = proxy
+        }
+        request.continue(overrides)
+      })
+
+      await page.setUserAgent(randomUseragent.getRandom())
+      await page.goto(url, { waitUntil: "networkidle2" })
+      await new Promise((resolve) => setTimeout(resolve, Math.random() * 5000 + 2000))
+    }
+
+    await browser.close()
+    return NextResponse.json({ message: "Traffic boosted successfully!" })
   } catch (error) {
-    return NextResponse.json({ error: (error as Error).message }, { status: 500 })
+    console.error("Boost error:", error)
+    return NextResponse.json({ error: "Failed to boost traffic. Please try again later." }, { status: 500 })
   }
 }
-
-import { useState } from "react";
-import axios from "axios";
-
-export default function Home() {
-  const [url, setUrl] = useState("");
-  const [count, setCount] = useState(100);
-  const [comment, setComment] = useState("");
-  const [loading, setLoading] = useState(false);
-  const [message, setMessage] = useState("");
-
-  const startBoosting = async () => {
-    if (!url.includes("reddit.com")) {
-      alert("Enter a valid Reddit post URL.");
-      return;
-    }
-
-    setLoading(true);
-    setMessage("");
-
-    try {
-      const response = await axios.post("/api/boost", { url, count });
-      setMessage(response.data.message || "Boosting started!");
-    } catch (error) {
-      setMessage("❌ Error: " + error.response?.data?.error || "Failed");
-    }
-
-    setLoading(false);
-  };
-
-  const generateComment = async () => {
-    setMessage("Generating AI comment...");
-    try {
-      const response = await axios.post("/api/comment", { url });
-      setComment(response.data.comment);
-      setMessage("✅ AI comment generated!");
-    } catch (error) {
-      setMessage("❌ AI Error: " + error.message);
-    }
-  };
-
-  return (
-    <div style={{ textAlign: "center", padding: "40px", fontFamily: "Arial" }}>
 

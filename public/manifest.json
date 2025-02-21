@@ -1,11 +1,11 @@
 {
-  "name": "MoonPup Engagement",
+  "name": "MoonPup",
   "short_name": "MoonPup",
-  "description": "Advanced community engagement and analytics platform for MoonPup",
+  "description": "The 1st DeepSeek AI meme on Solana",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#000000",
+  "background_color": "#4B0082",
+  "theme_color": "#8B5CF6",
   "icons": [
     {
       "src": "/icon-192x192.png",

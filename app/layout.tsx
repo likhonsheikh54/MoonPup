@@ -1,47 +1,38 @@
 import type React from "react"
-import type { Metadata, Viewport } from "next"
+import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
-import { Providers } from "@/app/providers"
-import { SidebarNav } from "@/components/sidebar-nav"
-import { SidebarProvider } from "@/components/ui/sidebar"
+import { Providers } from "./providers"
+import { Sidebar } from "@/components/sidebar"
 import { Toaster } from "@/components/ui/toaster"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "MoonPup Engagement",
-  description: "The 1st DeepSeek AI meme on-chain - Community engagement and analytics platform",
+  title: "MoonPup - The 1st DeepSeek AI meme on Solana",
+  description: "Join the cosmic journey with MoonPup, the innovative AI-powered meme token on Solana.",
+  viewport: "width=device-width, initial-scale=1",
+  themeColor: "#8B5CF6",
   manifest: "/manifest.json",
-  icons: {
-    apple: "/icon-512x512.png",
-  },
+  icons: [
+    { rel: "icon", url: "/favicon.ico" },
+    { rel: "apple-touch-icon", url: "/icon-192x192.png" },
+  ],
     generator: 'v0.dev'
 }
 
-export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
-  themeColor: "#000000",
-}
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script src="https://telegram.org/js/telegram-web-app.js" async></script>
+      </head>
       <body className={inter.className}>
         <Providers>
-          <SidebarProvider defaultOpen={true}>
-            <div className="flex min-h-[100dvh] overflow-hidden bg-background">
-              <SidebarNav />
-              <main className="flex-1 overflow-y-auto">{children}</main>
-            </div>
-          </SidebarProvider>
+          <div className="flex h-screen overflow-hidden bg-gradient-to-br from-purple-900 to-indigo-900">
+            <Sidebar />
+            <main className="flex-1 overflow-y-auto p-4 md:p-8">{children}</main>
+          </div>
           <Toaster />
         </Providers>
       </body>

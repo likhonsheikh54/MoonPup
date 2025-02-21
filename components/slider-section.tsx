@@ -10,10 +10,11 @@ import { ChevronDown, ChevronUp } from "lucide-react"
 interface SliderSectionProps {
   title: string
   children: React.ReactNode
+  defaultOpen?: boolean
 }
 
-export function SliderSection({ title, children }: SliderSectionProps) {
-  const [isOpen, setIsOpen] = useState(false)
+export function SliderSection({ title, children, defaultOpen = false }: SliderSectionProps) {
+  const [isOpen, setIsOpen] = useState(defaultOpen)
 
   return (
     <Card className="mb-4">
