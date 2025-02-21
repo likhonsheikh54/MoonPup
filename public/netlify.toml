@@ -1,0 +1,8 @@
+[build]
+  command = "bun install && bun run build"
+  publish = "dist" # Change this to your actual output directory
+
+[build.environment]
+  NODE_VERSION = "18" # Ensure compatibility with Bun
+  BUN_VERSION = "latest" # Use the latest version of Bun
+
