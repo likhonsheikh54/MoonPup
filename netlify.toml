@@ -21,5 +21,5 @@
   directory = "netlify/functions"
 
 [context.production.environment]
-  HUGGINGFACE_API_KEY = ""
+  HUGGINGFACE_API_KEY = "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"
 

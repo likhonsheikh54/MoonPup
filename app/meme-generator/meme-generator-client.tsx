@@ -6,11 +6,11 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 
-const client = new HfInference("")
+const client = new HfInference("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")
 
 export function MemeGeneratorClient() {
-  const [prompt, setPrompt] = useState("")
-  const [imageUrl, setImageUrl] = useState("")
+  const [prompt, setPrompt] = useState<string>("")
+  const [imageUrl, setImageUrl] = useState<string>("")
 
   const generateMeme = async () => {
     try {
@@ -35,7 +35,7 @@ export function MemeGeneratorClient() {
         <div className="space-y-4">
           <Input
             value={prompt}
-            onChange={(e) => setPrompt(e.target.value)}
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) => setPrompt(e.target.value)}
             placeholder="Describe your cosmic meme..."
             className="bg-white bg-opacity-10"
           />
