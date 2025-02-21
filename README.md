@@ -1,163 +1,79 @@
-# 🌕 MoonPup ($MPUP)
+# 🌕 MOONPUP $MPUP
 
 <div align="center">
 
-![MoonPup Logo](assets/logo.png)
+![MoonPup Logo](https://moonpup.lol/assets/images/image01.png?v=799071c8)
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/MoonPupSol?style=social)](https://x.com/ogmpupsol?s=21)
-[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/s/ogmpupsol)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Discord](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/moonpup)
+[![Telegram](https://img.shields.io/badge/Join-Telegram-blue)](https://t.me/s/ogmpupsol)
+[![Website](https://img.shields.io/badge/Website-moonpup.lol-blue)](https://moonpup.lol)
 
-**The First DeepSeek AI Meme Token on Solana**
-
-[Website](https://moonpup.lol/) • [Telegram](https://t.me/s/ogmpupsol) • [Twitter](https://x.com/ogmpupsol?s=21) • [Linktree](https://linktr.ee/moonpupsol)
+*"Before humans reached for the stars, dogs showed us the way."*
 
 </div>
 
-## 📚 Table of Contents
-- [Overview](#overview)
-- [Token Details](#token-details)
-- [Market Data](#market-data)
-- [Trading Information](#trading-information)
-- [Community & Social](#community--social)
-- [Features & Utilities](#features--utilities)
-- [Development](#development)
-- [Getting Started](#getting-started)
-- [Contributing](#contributing)
-- [Disclaimer](#disclaimer)
+## 🚀 The First Four-Legged Pioneers
 
-## 🚀 Overview
+MOONPUP celebrates the incredible legacy of the first space pioneers - the brave canine cosmonauts who ventured beyond Earth's atmosphere. These courageous pups paved the way for human space exploration, proving that dreams of reaching the stars know no species bounds.
 
-MoonPup ($MPUP) is a revolutionary meme-based cryptocurrency on the Solana blockchain, bridging the gap between AI technology and crypto culture. As the first DeepSeek AI meme token on-chain, we're pioneering a new frontier in digital assets while fostering a vibrant, engaged community.
+### 🐾 A Tribute to Space History
 
-### Core Vision
-- 🤖 Integration with DeepSeek AI technology
-- 🎨 Creative meme culture meets blockchain innovation
-- 🌐 Building a global community of diamond paws
-- 💎 Long-term value creation through utility development
+Before the first human footprint on the moon, there were pawprints in the cosmos. MOONPUP isn't just another meme coin - it's a tribute to these pioneering pooches who:
+- Boldly went where no dog had gone before
+- Proved space travel was possible
+- Became the first living beings to orbit Earth
+- Laid the foundation for all space exploration
 
-## 💎 Token Details
+## 💫 Project Fundamentals
 
-| Detail | Information |
-|--------|-------------|
-| Token Name | MoonPup ($MPUP) |
-| Blockchain | Solana |
-| Total Supply | 1,000,000,000 tokens |
-| Liquidity | 100% burned |
-| Contract Status | Revoked |
-| Tax | 0% |
-| Contract Address | `8PVFdKx7fX1FmmoASfTu5CUPEWuD1WY73Z24UTgCpump` |
+### 📊 Tokenomics
+- **Total Supply:** 1,000,000,000 MPUP
+- **Liquidity:** 100% LP BURNT
+- **Contract Status:** Revoked
+- **Tax:** 0%
+- **Platform:** Launching on PUMP.FUN
 
-## 📊 Market Data
+### 🛡️ Security Features
+- Fully revoked contract
+- Burnt liquidity
+- Zero transaction tax
+- Transparent operations
 
-> *As of February 21, 2025*
+## 🌟 Why MOONPUP?
 
-- **Price:** $0.0003006 USD
-- **Liquidity:** ~$89,000 USD
-- **FDV:** ~$300,000 USD
+1. **Historical Significance**
+   - Honors the real canine space pioneers
+   - Connects crypto culture with space exploration history
 
-### 📈 Market Tracking
-- [CoinMarketCap](https://coinmarketcap.com/dexscan/solana/9rsoGDwPb3xnddsu1ernhmix4xsua3sngs4hm4gw7oyv/)
-- [CoinGecko](https://www.coingecko.com/en/coins/moonpup)
-- [DEX Screener](https://dexscreener.com/solana/9rsogdwpb3xnddsu1ernhmix4xsua3sngs4hm4gw7oyv)
+2. **Community First**
+   - Zero tax structure for optimal trading
+   - Community-driven development and governance
 
-## 💱 Trading Information
+3. **Strong Foundation**
+   - 100% burnt liquidity for price stability
+   - Revoked contract for maximum security
 
-- **Platform:** Raydium DEX
-- **Trading Pair:** MPUP/SOL
-- **Trading Address:** `9rsoGDwPb3xnddSU1eRNhmiX4xSUA3SNgS4Hm4GW7oyv`
+## 🎯 Vision & Mission
 
-## 🌐 Community & Social
+MOONPUP aims to:
+- Celebrate the spirit of exploration
+- Build a vibrant, engaged community
+- Create lasting value through innovation
+- Honor the legacy of space-faring dogs
 
-Join our thriving community across platforms:
+## 🔗 Join the Pack
 
-- [Official Website](https://moonpup.lol/)
-- [Telegram Community](https://t.me/s/ogmpupsol)
-- [Twitter/X](https://x.com/ogmpupsol?s=21)
-- [Discord](https://discord.gg/moonpup)
-- [Reddit](https://reddit.com/r/MoonPupOfficial)
-- [Instagram](https://instagram.com/moonpupsol)
-- [Linktree](https://linktr.ee/moonpupsol)
-
-## 🛠 Features & Utilities
-
-### Current Development
-- AI-powered price alert bot
-- Interactive AI agent for Telegram and X
-- Diamond Paw Dashboard for the Moon Pack
-- Community engagement tools and features
-
-### Upcoming Utilities
-- Advanced trading tools
-- Community governance system
-- Cross-platform integrations
-- Enhanced AI features
-
-## 💻 Development
-
-### Prerequisites
-```bash
-- Node.js v16+
-- Solana CLI tools
-- Yarn or npm
-```
-
-### Local Setup
-```bash
-# Clone repository
-git clone https://github.com/Shillz-Labs/MoonPup.git
-
-# Navigate to project directory
-cd MoonPup
-
-# Install dependencies
-yarn install
-
-# Start development environment
-yarn dev
-```
-
-## 🚀 Getting Started
-
-1. **Join the Community**
-   - Follow us on [Twitter](https://x.com/ogmpupsol?s=21)
-   - Join our [Telegram](https://t.me/s/ogmpupsol)
-   - Subscribe to our [Discord](https://discord.gg/moonpup)
-
-2. **Explore the Project**
-   - Review our [documentation](https://docs.moonpup.lol)
-   - Check out our [GitHub repository](https://github.com/Shillz-Labs/MoonPup)
-   - Read our [Medium articles](https://medium.com/@moonpup)
-
-3. **Contribute**
-   - Submit pull requests
-   - Report issues
-   - Share ideas
-   - Create content
-
-## 🤝 Contributing
-
-We welcome contributions from developers, creators, and community members! Please read our [Contributing Guidelines](CONTRIBUTING.md) before submitting pull requests.
-
-Key areas for contribution:
-- Code development
-- Documentation
-- Community tools
-- Content creation
-- Bug reports
-- Feature suggestions
-
-## ⚠️ Disclaimer
-
-Cryptocurrency investments carry inherent risks. This project is provided for educational and community engagement purposes only. Always conduct thorough research (DYOR) and consult financial advisors before making investment decisions.
+- **Website:** [moonpup.lol](https://moonpup.lol)
+- **Telegram:** [Join Our Community](https://t.me/s/ogmpupsol)
+- **Twitter:** [@MoonPupSol](https://x.com/ogmpupsol?s=21)
+- **Trading:** Coming soon on PUMP.FUN
 
 ---
 
 <div align="center">
 
-Made with 💙 by the MoonPup Community
+**TO THE MOON, WITH WAGGING TAILS! 🚀🐕**
 
-[Website](https://moonpup.lol/) • [Telegram](https://t.me/s/ogmpupsol) • [Twitter](https://x.com/ogmpupsol?s=21) • [Discord](https://discord.gg/moonpup)
+*In memory of the brave pups who first touched the stars*
 
 </div>
