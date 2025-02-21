@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "vercel build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -76,6 +76,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "postcss": "^8",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vercel": "^41.1.4"
   }
 }
