@@ -14,7 +14,7 @@
   ],
   "env": {
     "NEXT_PUBLIC_API_URL": "@api_url",
-    "HUGGINGFACE_API_KEY": "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"
+    "HUGGINGFACE_API_KEY": "@huggingface_api_key"
   }
 }
 

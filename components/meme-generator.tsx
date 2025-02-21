@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Loader2 } from "lucide-react"
 import { HfInference } from "@huggingface/inference"
 
-const client = new HfInference("")
+const client = new HfInference("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")
 
 export function MemeGenerator() {
   const [prompt, setPrompt] = useState("")
