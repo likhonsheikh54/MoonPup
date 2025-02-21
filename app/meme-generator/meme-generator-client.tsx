@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 
-const client = new HfInference("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")
+const client = new HfInference("")
 
 export function MemeGeneratorClient() {
   const [prompt, setPrompt] = useState("")

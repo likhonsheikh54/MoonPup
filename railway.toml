@@ -10,5 +10,5 @@ restartPolicyType = "ON_FAILURE"
 
 [deploy.envs]
 NODE_ENV = "production"
-HUGGINGFACE_API_KEY = "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"
+HUGGINGFACE_API_KEY = ""
 
