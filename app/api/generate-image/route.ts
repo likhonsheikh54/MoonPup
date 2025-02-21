@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server"
 import { HfInference } from "@huggingface/inference"
 
-const HF_API_KEY = "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"
-const client = new HfInference(HF_API_KEY)
+// Use environment variable instead of hardcoded token
+const client = new HfInference(process.env.HUGGINGFACE_API_TOKEN)
 
 export async function POST(request: Request) {
   try {

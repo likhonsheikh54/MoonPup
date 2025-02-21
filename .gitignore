@@ -3,3 +3,7 @@
 # Config file with sensitive information
 config.json
 
+.env
+.env.local
+.env.*.local
+
