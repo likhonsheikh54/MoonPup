@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-gradient-start: #ff3b9a;
+  --primary-gradient-end: #4cc9f0;
+  --secondary-gradient-start: #ffd700;
+  --secondary-gradient-end: #7fffd4;
+  --brand-pink: #ff3b9a;
+  --accent-yellow: #ffd700;
+  --background-start: #1a0b2e;
+  --background-end: #000000;
+}
+
+body {
+  background: linear-gradient(to bottom right, var(--background-start), var(--background-end));
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+.primary-gradient {
+  background: linear-gradient(to right, var(--primary-gradient-start), var(--primary-gradient-end));
+}
+
+.secondary-gradient {
+  background: linear-gradient(to right, var(--secondary-gradient-start), var(--secondary-gradient-end));
+}
+
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@media (max-width: 640px) {
+  .text-gradient {
+    font-size: 1.5rem;
+  }
+}
+

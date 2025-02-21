@@ -1,0 +1,14 @@
+[build]
+builder = "NIXPACKS"
+buildCommand = "npm run build"
+
+[deploy]
+startCommand = "npm start"
+healthcheckPath = "/"
+healthcheckTimeout = 100
+restartPolicyType = "ON_FAILURE"
+
+[deploy.envs]
+NODE_ENV = "production"
+HUGGINGFACE_API_KEY = "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"
+
