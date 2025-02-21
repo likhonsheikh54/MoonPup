@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "vercel build",
+    "build": "npx vercel build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prebuild": "npx vercel --version"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
