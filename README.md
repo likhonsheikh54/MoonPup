@@ -1,100 +1,163 @@
 # 🌕 MoonPup ($MPUP)
 
-Welcome to the official **MoonPup ($MPUP)** repository! MoonPup is a unique meme-based cryptocurrency on the **Solana** blockchain, inspired by the adventurous spirit of dogs that ventured into space. Our project blends art, technology, and community, creating a vibrant ecosystem where dog memes are immortalized as digital art. Recognized as the first DeepSeek AI meme on-chain, MoonPup is designed to innovate, engage, and inspire.
+<div align="center">
 
----
+![MoonPup Logo](assets/logo.png)
+
+[![Twitter Follow](https://img.shields.io/twitter/follow/MoonPupSol?style=social)](https://x.com/ogmpupsol?s=21)
+[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/s/ogmpupsol)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Discord](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/moonpup)
+
+**The First DeepSeek AI Meme Token on Solana**
+
+[Website](https://moonpup.lol/) • [Telegram](https://t.me/s/ogmpupsol) • [Twitter](https://x.com/ogmpupsol?s=21) • [Linktree](https://linktr.ee/moonpupsol)
+
+</div>
+
+## 📚 Table of Contents
+- [Overview](#overview)
+- [Token Details](#token-details)
+- [Market Data](#market-data)
+- [Trading Information](#trading-information)
+- [Community & Social](#community--social)
+- [Features & Utilities](#features--utilities)
+- [Development](#development)
+- [Getting Started](#getting-started)
+- [Contributing](#contributing)
+- [Disclaimer](#disclaimer)
 
 ## 🚀 Overview
 
-- **Token Name:** MoonPup ($MPUP)
-- **Blockchain:** Solana
-- **Token Type:** Meme-based Cryptocurrency
-- **Concept:** The first DeepSeek AI meme on-chain
+MoonPup ($MPUP) is a revolutionary meme-based cryptocurrency on the Solana blockchain, bridging the gap between AI technology and crypto culture. As the first DeepSeek AI meme token on-chain, we're pioneering a new frontier in digital assets while fostering a vibrant, engaged community.
 
----
+### Core Vision
+- 🤖 Integration with DeepSeek AI technology
+- 🎨 Creative meme culture meets blockchain innovation
+- 🌐 Building a global community of diamond paws
+- 💎 Long-term value creation through utility development
 
-## 🔍 Token Details
+## 💎 Token Details
 
-| **Detail**             | **Information**                                 |
-| ---------------------- | ----------------------------------------------- |
-| **Total Supply**       | 1,000,000,000 tokens                            |
-| **Liquidity**          | 100% of the liquidity pool is burned            |
-| **Contract Status**    | Revoked                                         |
-| **Tax**                | 0%                                              |
+| Detail | Information |
+|--------|-------------|
+| Token Name | MoonPup ($MPUP) |
+| Blockchain | Solana |
+| Total Supply | 1,000,000,000 tokens |
+| Liquidity | 100% burned |
+| Contract Status | Revoked |
+| Tax | 0% |
+| Contract Address | `8PVFdKx7fX1FmmoASfTu5CUPEWuD1WY73Z24UTgCpump` |
 
----
+## 📊 Market Data
 
-## 💹 Market Data *(As of February 21, 2025)*
+> *As of February 21, 2025*
 
-- **Price:** ~$0.0003006 USD
+- **Price:** $0.0003006 USD
 - **Liquidity:** ~$89,000 USD
-- **Fully Diluted Valuation (FDV):** ~$300,000 USD
+- **FDV:** ~$300,000 USD
 
-Stay updated with the latest market stats:
-- [CoinMarketCap](https://coinmarketcap.com/dexscan/solana/9rsoGDwPb3xnddSU1eRNhmiX4xSUA3SNgS4Hm4GW7oyv/)
+### 📈 Market Tracking
+- [CoinMarketCap](https://coinmarketcap.com/dexscan/solana/9rsoGDwPb3xnddsu1ernhmix4xsua3sngs4hm4gw7oyv/)
 - [CoinGecko](https://www.coingecko.com/en/coins/moonpup)
 - [DEX Screener](https://dexscreener.com/solana/9rsogdwpb3xnddsu1ernhmix4xsua3sngs4hm4gw7oyv)
 
----
-
 ## 💱 Trading Information
 
-- **Trading Platform:** Raydium (Solana-based decentralized exchange)
+- **Platform:** Raydium DEX
 - **Trading Pair:** MPUP/SOL
-- **Contract Address:** `8PVFdKx7fX1FmmoASfTu5CUPEWuD1WY73Z24UTgCpump`
+- **Trading Address:** `9rsoGDwPb3xnddSU1eRNhmiX4xSUA3SNgS4Hm4GW7oyv`
 
----
+## 🌐 Community & Social
 
-## 🌐 Community & Social Media
+Join our thriving community across platforms:
 
-Connect with the MoonPup community and join the conversation:
+- [Official Website](https://moonpup.lol/)
+- [Telegram Community](https://t.me/s/ogmpupsol)
+- [Twitter/X](https://x.com/ogmpupsol?s=21)
+- [Discord](https://discord.gg/moonpup)
+- [Reddit](https://reddit.com/r/MoonPupOfficial)
+- [Instagram](https://instagram.com/moonpupsol)
+- [Linktree](https://linktr.ee/moonpupsol)
 
-- **Official Website:** [moonpup.lol](https://moonpup.lol/)
-- **Social Hub:** [Linktree: MoonPupSol](https://linktr.ee/moonpupsol)
-- **Telegram:** [MoonPup Community](https://t.me/s/ogmpupsol)
-- **Twitter:** [@MoonPupSol](https://x.com/ogmpupsol?s=21)
-- **Quick Access:** [TR.ee Link](https://tr.ee/o2n7xyW8Sg)
+## 🛠 Features & Utilities
 
----
+### Current Development
+- AI-powered price alert bot
+- Interactive AI agent for Telegram and X
+- Diamond Paw Dashboard for the Moon Pack
+- Community engagement tools and features
 
-## 📖 About the Project
+### Upcoming Utilities
+- Advanced trading tools
+- Community governance system
+- Cross-platform integrations
+- Enhanced AI features
 
-MoonPup is a revolutionary project that merges meme culture with blockchain technology. By harnessing the power of AI, we are building a decentralized platform that:
-- **Innovates:** Pioneering the first DeepSeek AI meme on-chain.
-- **Engages:** Fostering a creative and active community.
-- **Inspires:** Redefining digital assets with a playful twist.
+## 💻 Development
 
-Our mission is to push the boundaries of blockchain while celebrating creativity and humor.
+### Prerequisites
+```bash
+- Node.js v16+
+- Solana CLI tools
+- Yarn or npm
+```
 
----
+### Local Setup
+```bash
+# Clone repository
+git clone https://github.com/Shillz-Labs/MoonPup.git
 
-## 🔧 Getting Started
+# Navigate to project directory
+cd MoonPup
 
-Ready to dive in? Explore our code, contribute, or simply learn more by visiting our GitHub repository:
+# Install dependencies
+yarn install
 
-- [MoonPup GitHub Repository](https://github.com/Shillz-Labs/MoonPup)
+# Start development environment
+yarn dev
+```
 
-Refer to our contribution guidelines and documentation within the repository for more details on how you can help shape the future of MoonPup.
+## 🚀 Getting Started
 
----
+1. **Join the Community**
+   - Follow us on [Twitter](https://x.com/ogmpupsol?s=21)
+   - Join our [Telegram](https://t.me/s/ogmpupsol)
+   - Subscribe to our [Discord](https://discord.gg/moonpup)
+
+2. **Explore the Project**
+   - Review our [documentation](https://docs.moonpup.lol)
+   - Check out our [GitHub repository](https://github.com/Shillz-Labs/MoonPup)
+   - Read our [Medium articles](https://medium.com/@moonpup)
+
+3. **Contribute**
+   - Submit pull requests
+   - Report issues
+   - Share ideas
+   - Create content
+
+## 🤝 Contributing
+
+We welcome contributions from developers, creators, and community members! Please read our [Contributing Guidelines](CONTRIBUTING.md) before submitting pull requests.
+
+Key areas for contribution:
+- Code development
+- Documentation
+- Community tools
+- Content creation
+- Bug reports
+- Feature suggestions
 
 ## ⚠️ Disclaimer
 
-*Cryptocurrency investments are highly volatile and involve significant risks. Please conduct your own research and consult with a financial advisor before making any investment decisions.*
+Cryptocurrency investments carry inherent risks. This project is provided for educational and community engagement purposes only. Always conduct thorough research (DYOR) and consult financial advisors before making investment decisions.
 
 ---
 
-## 🔗 Sources & References
+<div align="center">
 
-- **Official Website:** [moonpup.lol](https://moonpup.lol/)
-- **Linktree:** [MoonPupSol](https://linktr.ee/moonpupsol)
-- **Telegram:** [MoonPup Community](https://t.me/s/ogmpupsol)
-- **Twitter:** [@MoonPupSol](https://x.com/ogmpupsol?s=21)
-- **CoinMarketCap:** [View Data](https://coinmarketcap.com/dexscan/solana/9rsoGDwPb3xnddSU1eRNhmiX4xSUA3SNgS4Hm4GW7oyv/)
-- **CoinGecko:** [View Data](https://www.coingecko.com/en/coins/moonpup)
-- **DEX Screener:** [View Charts](https://dexscreener.com/solana/9rsogdwpb3xnddsu1ernhmix4xsua3sngs4hm4gw7oyv)
-- **TR.ee Link:** [Quick Access](https://tr.ee/o2n7xyW8Sg)
+Made with 💙 by the MoonPup Community
 
----
+[Website](https://moonpup.lol/) • [Telegram](https://t.me/s/ogmpupsol) • [Twitter](https://x.com/ogmpupsol?s=21) • [Discord](https://discord.gg/moonpup)
 
-*For the latest updates and further information, please refer to our official channels listed above. Join us in redefining the future of digital assets and meme culture!*
+</div>
