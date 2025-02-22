@@ -94,9 +94,7 @@ body {
   }
 } /* end of @layer base */
 
-/* Additional styles outside of @layer base */
 .animate-float {
-  /* Define animation properties */
   animation: float 3s ease-in-out infinite;
 }
 
