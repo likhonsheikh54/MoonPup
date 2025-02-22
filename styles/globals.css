@@ -92,4 +92,22 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+} /* end of @layer base */
+
+/* Additional styles outside of @layer base */
+.animate-float {
+  /* Define animation properties */
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
