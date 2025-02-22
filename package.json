@@ -72,5 +72,9 @@
     "postcss": "^8.4.32",
     "typescript": "^5.3.3",
     "vercel": "^41.1.4"
+  },
+  "overrides": {
+    "uuid": "^9.0.0",
+    "glob": "^9.0.0"
   }
 }
